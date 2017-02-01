@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tabbed:PlatformTabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tabbed="clr-namespace:Messier16.Forms.Controls;assembly=Messier16.Forms.Controls.PlatformTabbedPage"
+             xmlns:views="clr-namespace:ThatCSharpGuy.UI.Views;assembly=ThatCSharpGuy.UI"
+             x:Class="ThatCSharpGuy.UI.Views.HomePage"
+                           BarBackgroundColor="#EEEEF2"
+                           SelectedColor="#3C8A3F">
+  <tabbed:PlatformTabbedPage.Children>
+    <views:FeedPage></views:FeedPage>
+    <views:VideoPage></views:VideoPage>
+    <views:TweetsPage></views:TweetsPage>
+    <views:AboutPage></views:AboutPage>
+  </tabbed:PlatformTabbedPage.Children>
+
+</tabbed:PlatformTabbedPage>
