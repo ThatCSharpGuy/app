@@ -2,6 +2,7 @@
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
     "PlatformTabbedPage": "0.1.5",
+    "Xamarin.FFImageLoading.Forms": "2.2.8",
     "Xamarin.Forms": "2.3.3.180"
   },
   "frameworks": {

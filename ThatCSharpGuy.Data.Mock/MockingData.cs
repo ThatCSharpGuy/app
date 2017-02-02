@@ -14,11 +14,21 @@ namespace ThatCSharpGuy.Data.Mock
 
         private MockingData()
         {
+
+            var images = new string[]
+            {
+                "http://thatcsharpguy.com/postimages//xamarin-forms/camerapage/featured.jpg",
+                "http://thatcsharpguy.com/postimages//xamarin-forms/userdialogs/featured.jpg",
+                "http://thatcsharpguy.com/postimages//xamarin-forms/formattednumberentry/featured.png",
+                "http://thatcsharpguy.com/postimages//xamarin-forms/tips.png",
+                "http://thatcsharpguy.com/postimages/tesseract-ocr-xamarin/featured.png"
+            };
             var posts = Enumerable.Range(0, 70)
                 .Select(i => new Post
                 {
                     Title = $"Post {i} de bla bla bla",
                     Date = DateTimeOffset.Now,
+                    FeaturedImage = images[i % images.Length],
                     Summary = "Bla bla bla bvla bvlaalkjdfioj lalks dfjdw do0 dwodw dwjdw dwoidwm dwod"
                 });
             Posts = new List<Post>(posts);

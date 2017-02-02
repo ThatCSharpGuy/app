@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms"
+          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+          x:Class="ThatCSharpGuy.UI.Controls.Cells.PostCell"
+		      xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+		      xmlns:controls="clr-namespace:ThatCSharpGuy.UI.Controls;assembly=ThatCSharpGuy.UI">
+  <controls:CardView Margin="10,5">
+    <controls:CardView.Content>
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!--<ffimageloading:CachedImage x:Name="Image" HorizontalOptions="Center" VerticalOptions="Center"
+			LoadingPlaceholder="loading.png" ErrorPlaceholder="error.png" DownsampleToViewSize="true"
+			Aspect="AspectFill" HeightRequest="210" WidthRequest="400">-->
+        <ffimageloading:CachedImage x:Name="Image"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center" DownsampleToViewSize="true"
+          Aspect="AspectFit">
+        </ffimageloading:CachedImage>
+
+        <Label x:Name="Label" FontSize="Large" Grid.Row="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+      </Grid>
+    </controls:CardView.Content>
+  </controls:CardView>
+</ViewCell>
