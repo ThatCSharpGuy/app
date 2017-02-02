@@ -7,7 +7,7 @@ namespace ThatCSharpGuy.UI
     {
         public App()
         {
-            MainPage = new HomePage();
+			MainPage = new VideoDetailPage();
         }
 
         protected override void OnStart()

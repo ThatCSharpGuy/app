@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ThatCSharpGuy.UI.VideoDetailPage">
+	<ContentPage.Content>
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="200" />
+					<RowDefinition Height="*" />
+				</Grid.RowDefinitions>
+				<WebView Grid.Row="0" Source="https://www.youtube.com/embed/qb9znWjxFzY?rel=0&amp;showinfo=0"></WebView>
+
+
+		<ScrollView  Grid.Row="1">
+				<StackLayout Padding="10">
+					<Label FontSize="Large" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et elementum velit. Aliquam vehicula est."></Label>
+					<Label Text="Proin pulvinar dapibus nisi, at laoreet turpis maximus vitae. Donec a odio venenatis, aliquet libero vel, eleifend massa. In interdum interdum purus eu auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse arcu dolor, faucibus quis viverra id, eleifend vel nunc. Donec faucibus, mauris vitae consectetur porttitor, velit mi sollicitudin lectus, nec pharetra lacus quam ut leo. Suspendisse sed dolor iaculis, aliquam purus condimentum, porttitor diam. Pellentesque consequat, magna sed malesuada rhoncus, arcu dui facilisis leo, ac eleifend turpis diam tristique ex. Quisque convallis felis et velit tempus consectetur. Fusce aliquam ante in felis pulvinar molestie. Aliquam interdum elit nunc, quis rutrum diam dapibus vel. Aliquam et orci id massa varius suscipit. Donec scelerisque dui id lacus elementum vulputate. Quisque ornare, odio ut tincidunt scelerisque, lorem ligula sagittis orci, non laoreet libero lacus non urna. Etiam tincidunt iaculis convallis. Nunc viverra erat sit amet tortor dictum, vitae scelerisque lacus sollicitudin."></Label>
+				</StackLayout>
+		</ScrollView>
+			</Grid>
+	</ContentPage.Content>
+</ContentPage>
