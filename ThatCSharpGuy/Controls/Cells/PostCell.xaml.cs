@@ -27,8 +27,9 @@ namespace ThatCSharpGuy.UI.Controls.Cells
             if (item == null)
                 return;
 
-            Image.Source = "https://res.cloudinary.com/appod/image/fetch/t_TCSG%20app/" +item.FeaturedImage;
-            Label.Text = item.Title;
+            FeaturedImage.Source = "https://res.cloudinary.com/appod/image/fetch/t_TCSG%20app/" +item.FeaturedImage;
+            TitleLabel.Text = item.Title;
+            FeaturedTagLabel.Text = item.Title;
         }
     }
 }
