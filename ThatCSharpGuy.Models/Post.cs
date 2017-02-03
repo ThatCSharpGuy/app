@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Newtonsoft.Json;
 
 namespace ThatCSharpGuy.Models
 {
@@ -9,7 +10,9 @@ namespace ThatCSharpGuy.Models
         public string Title { get; set; }
         public DateTimeOffset Date { get; set; }
         public string Summary { get; set; }
+        [JsonProperty("featured_image")]
         public string FeaturedImage { get; set; }
+        [JsonProperty("featured_tag")]
         public string FeaturedTag { get; set; }
 
 

@@ -131,6 +131,10 @@
       <Project>{0ce34246-5e9f-4d58-8c5e-cf34966c17f0}</Project>
       <Name>ThatCSharpGuy.Data.Mock</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ThatCSharpGuy.Data.Real\ThatCSharpGuy.Data.Real.csproj">
+      <Project>{3000b7b9-a31f-4d75-bd22-4a49fe5278d3}</Project>
+      <Name>ThatCSharpGuy.Data.Real</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ThatCSharpGuy.Data\ThatCSharpGuy.Data.csproj">
       <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
       <Name>ThatCSharpGuy.Data</Name>
