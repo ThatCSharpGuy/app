@@ -20,9 +20,9 @@
 						<RowDefinition Height="*" />
 					</Grid.RowDefinitions>
 					<Grid x:Name="MainStack" VerticalOptions="End" HorizontalOptions="FillAndExpand">
-						<md:MarkdownView x:Name="PostContent" ></md:MarkdownView>
+						
 						<!-- Shadow -->
-						<Image Source="https://res.cloudinary.com/appod/image/fetch/t_TCSG%20app/http://thatcsharpguy.com/postimages//aprende-c-sharp/yield/featured.jpg" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+						<Image Source="shadow" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
 						<StackLayout Padding="10" Spacing="0" VerticalOptions="End" HorizontalOptions="FillAndExpand">
 							<Label Text="Post title abcd ef ghijk hlm" FontSize="18" TextColor="White">
 								<Label.FontFamily>

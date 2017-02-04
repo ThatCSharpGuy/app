@@ -181,6 +181,11 @@
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shadow.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\shadow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\shadow.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shadow.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\shadow.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />

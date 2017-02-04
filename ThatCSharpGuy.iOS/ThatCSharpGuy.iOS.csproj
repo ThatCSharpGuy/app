@@ -139,6 +139,9 @@
     <BundleResource Include="Resources\youtube.png" />
     <BundleResource Include="Resources\youtube%402x.png" />
     <BundleResource Include="Resources\youtube%403x.png" />
+    <BundleResource Include="Resources\shadow.png" />
+    <BundleResource Include="Resources\shadow%402x.png" />
+    <BundleResource Include="Resources\shadow%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FFImageLoading, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">

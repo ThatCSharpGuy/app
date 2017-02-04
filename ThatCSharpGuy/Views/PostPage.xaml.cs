@@ -16,8 +16,8 @@ namespace ThatCSharpGuy.UI
 		protected override void OnAppearing()
 		{
 			base.OnAppearing();
-			//Body.Text = PostText;
-			PostContent.Markdown = PostText;
+			Body.Text = PostText;
+			//PostContent.Markdown = PostText;
 		}
 
 		const string PostText = @"##Lorem ipsum dolor sit amet  
