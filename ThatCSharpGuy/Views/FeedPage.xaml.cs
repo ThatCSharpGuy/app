@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ThatCSharpGuy.Data.Real;
 using ThatCSharpGuy.Data.Stores;
 using Xamarin.Forms;
 
@@ -19,8 +20,9 @@ namespace ThatCSharpGuy.UI.Views
         {
             base.OnAppearing();
             IPostsStore store = new PostsStore();
-
-            PostList.ItemsSource = (await store.GetPosts(0)).Items;
+			var respns4 = await store.GetPosts(1);
+			PostList.ItemsSource = respns4.Items;
+			System.Diagnostics.Debug.WriteLine($"{respns4.CurrentPage}");
         }
     }
 }

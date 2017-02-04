@@ -4,6 +4,9 @@
           x:Class="ThatCSharpGuy.UI.Controls.Cells.PostCell"
 		      xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
 		      xmlns:controls="clr-namespace:ThatCSharpGuy.UI.Controls;assembly=ThatCSharpGuy.UI">
+	<ViewCell.Height>
+		<OnPlatform x:TypeArguments="x:Double" iOS="250"/>
+	</ViewCell.Height>
   <controls:CardView Margin="10,5">
     <controls:CardView.Content>
       <Grid RowSpacing="0">

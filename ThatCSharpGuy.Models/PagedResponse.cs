@@ -7,6 +7,7 @@ namespace ThatCSharpGuy.Models
 {
     public class PagedResponse<T>
     {
+		[JsonProperty("posts")]
         public List<T> Items { get; set; }
         [JsonProperty("current_page")]
         public int CurrentPage { get; set; }

@@ -5,7 +5,7 @@
              x:Class="ThatCSharpGuy.UI.Views.FeedPage"
              Title="Feed"
              Icon="feed">
-  <ListView x:Name="PostList" HasUnevenRows="True" SeparatorVisibility="None" >
+  <ListView x:Name="PostList" HasUnevenRows="true" SeparatorVisibility="None" CachingStrategy="RecycleElement" >
     <ListView.ItemTemplate>
       <DataTemplate>
         <cells:PostCell></cells:PostCell>

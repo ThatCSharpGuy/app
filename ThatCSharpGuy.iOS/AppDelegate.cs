@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using FFImageLoading.Forms.Touch;
 using Foundation;
 using UIKit;
 
@@ -23,8 +23,10 @@ namespace App.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new ThatCSharpGuy.UI.App());
+			CachedImageRenderer.Init();
 
+            LoadApplication(new ThatCSharpGuy.UI.App());
+			ViewMarkdown.Forms.Plugin.iOS.MarkdownViewRenderer.Init();
             return base.FinishedLaunching(app, options);
         }
     }
