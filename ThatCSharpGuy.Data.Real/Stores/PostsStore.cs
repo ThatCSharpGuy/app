@@ -21,7 +21,17 @@ namespace ThatCSharpGuy.Data.Real
 
 	        _api = Refit.RestService.For<ITcsgApi>(client);
 	    }
-	    public async Task<PagedResponse<Post>> GetPosts(int page)
+
+
+
+		public async Task<FullPost> GetPost(string id)
+		{
+			var posts = await _api.GetPost(id);
+			return posts;
+			
+		}
+
+		public async Task<PagedResponse<Post>> GetPosts(int page)
 	    {
 	        var posts = await _api.GetPosts(page);
 	        return posts;

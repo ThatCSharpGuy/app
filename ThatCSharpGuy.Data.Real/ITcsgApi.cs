@@ -6,7 +6,10 @@ namespace ThatCSharpGuy.Data.Real
 {
     internal interface ITcsgApi
     {
-        [Get("/post{page}.json")]
-        Task<PagedResponse<Post>> GetPosts(int page);
+		[Get("/post{page}.json")]
+		Task<PagedResponse<Post>> GetPosts(int page);
+
+		[Get("/{id}post.json")]
+		Task<FullPost> GetPost(string id);
     }
 }
