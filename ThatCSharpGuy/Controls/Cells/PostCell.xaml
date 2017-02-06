@@ -20,8 +20,9 @@
 			LoadingPlaceholder="loading.png" ErrorPlaceholder="error.png" DownsampleToViewSize="true"
 			Aspect="AspectFill" HeightRequest="210" WidthRequest="400">-->
         <ffimageloading:CachedImage x:Name="FeaturedImage"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Center" DownsampleToViewSize="true"
+                                    HorizontalOptions="FillAndExpand"
+                                    VerticalOptions="FillAndExpand" 
+						DownsampleToViewSize="true"
           Aspect="AspectFit">
         </ffimageloading:CachedImage>
         <Label x:Name="FeaturedTagLabel" Margin="0" BackgroundColor="Black" 

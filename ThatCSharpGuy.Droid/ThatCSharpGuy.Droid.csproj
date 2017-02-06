@@ -159,12 +159,6 @@
     <Reference Include="CommonMark">
       <HintPath>..\packages\CommonMark.NET.0.14.0\lib\portable-net45+wp80+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\CommonMark.dll</HintPath>
     </Reference>
-    <Reference Include="ViewMarkdown.Forms.Plugin.Abstractions">
-      <HintPath>..\packages\Xam.Plugins.Forms.MarkdownView.0.1.2.1\lib\MonoAndroid10\ViewMarkdown.Forms.Plugin.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="ViewMarkdown.Forms.Plugin.Droid">
-      <HintPath>..\packages\Xam.Plugins.Forms.MarkdownView.0.1.2.1\lib\MonoAndroid10\ViewMarkdown.Forms.Plugin.Droid.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />

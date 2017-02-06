@@ -11,5 +11,6 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)PagedResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Post.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FullPost.cs" />
   </ItemGroup>
 </Project>

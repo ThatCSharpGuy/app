@@ -24,9 +24,7 @@ namespace App.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 			CachedImageRenderer.Init();
-
             LoadApplication(new ThatCSharpGuy.UI.App());
-			ViewMarkdown.Forms.Plugin.iOS.MarkdownViewRenderer.Init();
             return base.FinishedLaunching(app, options);
         }
     }

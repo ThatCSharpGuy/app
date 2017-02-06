@@ -7,7 +7,7 @@ namespace ThatCSharpGuy.UI
     {
         public App()
         {
-			MainPage = new NavigationPage(new PostPage());// new HomePage();
+			MainPage = new NavigationPage(new HomePage());
         }
 
         protected override void OnStart()

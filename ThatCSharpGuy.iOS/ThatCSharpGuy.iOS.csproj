@@ -97,6 +97,7 @@
     <ITunesArtwork Include="iTunesArtwork@2x" />
     <None Include="packages.config" />
     <Compile Include="Controls\AlwaysScrollViewRenderer.cs" />
+    <Compile Include="Controls\HtmlLabelRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />

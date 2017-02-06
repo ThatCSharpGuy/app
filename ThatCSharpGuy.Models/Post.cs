@@ -12,9 +12,12 @@ namespace ThatCSharpGuy.Models
         public string Summary { get; set; }
         [JsonProperty("featured_image")]
         public string FeaturedImage { get; set; }
+
         [JsonProperty("featured_tag")]
         public string FeaturedTag { get; set; }
 
-
+		public string id { get; set; }
+		public bool tv { get; set; }
+		public string author { get; set; }
     }
 }
