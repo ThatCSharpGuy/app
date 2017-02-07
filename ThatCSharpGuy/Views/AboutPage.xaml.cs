@@ -13,6 +13,7 @@ namespace ThatCSharpGuy.UI.Views
         public AboutPage()
         {
             InitializeComponent();
+            MainScroll.ParallaxView = HeaderView;
         }
     }
 }

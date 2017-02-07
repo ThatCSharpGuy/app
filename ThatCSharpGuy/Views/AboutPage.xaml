@@ -1,8 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ThatCSharpGuy.UI.Controls;assembly=ThatCSharpGuy.UI"
              x:Class="ThatCSharpGuy.UI.Views.AboutPage"
              Title="About"
              Icon="info">
-  <Label Text="About" VerticalOptions="Center" HorizontalOptions="Center" />
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="200" x:Name="Row1Header"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <Grid RowSpacing="0" ColumnSpacing="0" x:Name="HeaderView" BackgroundColor="{DynamicResource Primary}">
+      <Image
+          HorizontalOptions="FillAndExpand"
+          VerticalOptions="FillAndExpand"
+          Aspect="AspectFill"/>
+    </Grid>
+    <controls:ParallaxScrollView x:Name="MainScroll" Grid.RowSpan="2">
+      <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="200" x:Name="Row1Content"/>
+          <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="MainStack"
+             VerticalOptions="End"
+             HorizontalOptions="FillAndExpand">
+          <!--<Image Source="profile_pic_shadow.png"
+                 Aspect="AspectFill"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"/> -->
+        </Grid>
+        <StackLayout Grid.Row="1" Spacing="10" Padding="10">
+          <Label Text="Sobre el blog" Style="{StaticResource TitleLabel}" VerticalOptions="Center" HorizontalOptions="Center" />
+          <Label FontFamily="Helvetica-Light"  HorizontalOptions="Center" Text="Este es un blog dedicado a las ciencias computacionales y a la programación (más a esto último) de aplicaciones. El blog está hecho con Jekyll en una computadora con Windows 8.1 y utilizando Code como editor principal. Por alguna razón todo el código de este blog está en GitHub por si lo quieres ver." />
+          <Label Text="Antonio Feregrino" Style="{StaticResource TitleLabel}" VerticalOptions="Center" HorizontalOptions="Center" />
+          <Label FontFamily="Helvetica-Light"  HorizontalOptions="Center" Text="Programador, con ganas de enseñar y muchas más de aprender. Apasionado de lo que hago, hice mi primera calculadora con C# en 2008 y no he parado desde entonces, terminé la universidad en 6 años mientras trabajaba escribiendo código en Heurística Soluciones. También fui Microsoft Student Partner y miembro de la primera generación de Xamarin Student Partners, tengo un bonito trofeo de Xamarin que dice que soy un desarrollador certificado." />
+        </StackLayout>
+        </Grid>
+    </controls:ParallaxScrollView>
+  </Grid>
 </ContentPage>
