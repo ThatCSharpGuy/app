@@ -27,6 +27,7 @@ namespace ThatCSharpGuy.UI.Controls.Cells
             FeaturedImage.Source = "https://res.cloudinary.com/appod/image/fetch/t_TCSG%20app/" +item.FeaturedImage;
             TitleLabel.Text = item.Title;
             FeaturedTagLabel.Text = item.FeaturedTag;
+			ForceUpdateSize();
         }
     }
 }

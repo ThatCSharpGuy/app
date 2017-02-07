@@ -7,7 +7,10 @@
 	<ViewCell.Height>
 		<OnPlatform x:TypeArguments="x:Double" iOS="250"/>
 	</ViewCell.Height>
-  <controls:CardView Margin="10,5">
+  <controls:CardView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+		<controls:CardView.Margin>
+			<OnPlatform x:TypeArguments="Thickness" Android="10,5" iOS="0,5"/>
+		</controls:CardView.Margin>
     <controls:CardView.Content>
       <Grid RowSpacing="0">
         <Grid.RowDefinitions>
@@ -25,10 +28,10 @@
 						DownsampleToViewSize="true"
           Aspect="AspectFit">
         </ffimageloading:CachedImage>
+        <Label x:Name="TitleLabel" FontSize="Large" Grid.Row="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
         <Label x:Name="FeaturedTagLabel" Margin="0" BackgroundColor="Black" 
                TextColor="White"
-               FontSize="Small" Grid.Row="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
-        <Label x:Name="TitleLabel" FontSize="Large" Grid.Row="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+               FontSize="Micro" Grid.Row="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
       </Grid>
     </controls:CardView.Content>
   </controls:CardView>

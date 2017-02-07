@@ -98,6 +98,7 @@
     <None Include="packages.config" />
     <Compile Include="Controls\AlwaysScrollViewRenderer.cs" />
     <Compile Include="Controls\HtmlLabelRenderer.cs" />
+    <Compile Include="Controls\FeedListViewRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
@@ -161,14 +162,6 @@
       <HintPath>..\packages\Xamarin.FFImageLoading.2.2.8\lib\Xamarin.iOS10\FFImageLoading.Platform.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Messier16.Forms.Controls.iOS.PlatformTabbedPage">
-      <HintPath>..\packages\PlatformTabbedPage.0.1.5\lib\Xamarin.iOS10\Messier16.Forms.Controls.iOS.PlatformTabbedPage.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Messier16.Forms.Controls.PlatformTabbedPage">
-      <HintPath>..\packages\PlatformTabbedPage.0.1.5\lib\Xamarin.iOS10\Messier16.Forms.Controls.PlatformTabbedPage.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -211,6 +204,12 @@
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.3.4.184-pre1\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Messier16.Forms.Controls.iOS.PlatformTabbedPage">
+      <HintPath>..\packages\PlatformTabbedPage.0.1.6\lib\Xamarin.iOS10\Messier16.Forms.Controls.iOS.PlatformTabbedPage.dll</HintPath>
+    </Reference>
+    <Reference Include="Messier16.Forms.Controls.PlatformTabbedPage">
+      <HintPath>..\packages\PlatformTabbedPage.0.1.6\lib\Xamarin.iOS10\Messier16.Forms.Controls.PlatformTabbedPage.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
