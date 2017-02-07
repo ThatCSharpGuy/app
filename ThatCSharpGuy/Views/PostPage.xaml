@@ -6,12 +6,12 @@
 		xmlns:md="clr-namespace:ViewMarkdown.Forms.Plugin.Abstractions;assembly=ViewMarkdown.Forms.Plugin.Abstractions"
 		x:Class="ThatCSharpGuy.UI.PostPage">
 	<ContentPage.Content>
-		<Grid>
+		<Grid RowSpacing="2" BackgroundColor="{StaticResource AccentColor}">
 			<Grid.RowDefinitions>
 				<RowDefinition Height="Auto" x:Name="Row1Header" />
 				<RowDefinition Height="*" />
 			</Grid.RowDefinitions>
-			<Label x:Name="PostTitle" FontSize="Large"></Label>
+			<Label BackgroundColor="{StaticResource BackgroundAltColor}" x:Name="PostTitle" FontSize="Large"></Label>
 			<WebView Grid.Row="1" x:Name="Site" VerticalOptions="FillAndExpand">
 			</WebView>
 		</Grid>

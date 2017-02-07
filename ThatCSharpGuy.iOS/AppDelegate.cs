@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using FFImageLoading.Forms.Touch;
 using Foundation;
+using Messier16.Forms.Controls.iOS;
 using UIKit;
 
 namespace App.iOS
@@ -24,6 +25,7 @@ namespace App.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 			CachedImageRenderer.Init();
+			PlatformTabbedPageRenderer.Init();
             LoadApplication(new ThatCSharpGuy.UI.App());
             return base.FinishedLaunching(app, options);
         }

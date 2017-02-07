@@ -13,6 +13,7 @@ namespace ThatCSharpGuy.UI.Views
         public HomePage()
         {
             InitializeComponent();
+			NavigationPage.SetBackButtonTitle(this, "Posts");
         }
     }
 }

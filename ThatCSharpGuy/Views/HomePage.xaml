@@ -4,8 +4,9 @@
              xmlns:tabbed="clr-namespace:Messier16.Forms.Controls;assembly=Messier16.Forms.Controls.PlatformTabbedPage"
              xmlns:views="clr-namespace:ThatCSharpGuy.UI.Views;assembly=ThatCSharpGuy.UI"
              x:Class="ThatCSharpGuy.UI.Views.HomePage"
+							Title="That C# guy"
                            BarBackgroundColor="#EEEEF2"
-                           SelectedColor="#3C8A3F">
+                           SelectedColor="{StaticResource AccentColor}">
   <tabbed:PlatformTabbedPage.Children>
     <views:FeedPage></views:FeedPage>
     <views:AboutPage></views:AboutPage>

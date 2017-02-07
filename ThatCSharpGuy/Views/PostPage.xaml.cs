@@ -30,7 +30,7 @@ namespace ThatCSharpGuy.UI
 
 			var store = new Data.Real.PostsStore();
 			var post = await store.GetPost(_id);
-			Title = post.FeaturedTag;
+			Title = $"{post.Date.ToLocalTime():dd/MM/yyyy}";
 			PostTitle.Text = post.Title;
 			_page = "http://thatcsharpguy.com" + _id + "/m.html";
 			Site.Source = _page;
