@@ -5,6 +5,8 @@ using FFImageLoading.Forms.Touch;
 using Foundation;
 using Messier16.Forms.Controls.iOS;
 using UIKit;
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.iOS;
 
 namespace App.iOS
 {
@@ -26,7 +28,12 @@ namespace App.iOS
             global::Xamarin.Forms.Forms.Init();
 			CachedImageRenderer.Init();
 			PlatformTabbedPageRenderer.Init();
-            LoadApplication(new ThatCSharpGuy.UI.App());
+
+			var formsApp = new ThatCSharpGuy.UI.App();
+
+			UINavigationBar.Appearance.TintColor = ((Color)formsApp.Resources["BrandColor"] ).ToUIColor();
+
+            LoadApplication(formsApp);
             return base.FinishedLaunching(app, options);
         }
     }
