@@ -8,9 +8,18 @@
 			<Color x:Key="TextColor">#1E1E1E</Color>
 			<Color x:Key="TextClearColor">#ffffff</Color>
 
-			<Style TargetType="Label">
-				<Setter Property="TextColor" Value="{StaticResource TextColor}" />
-			</Style>
+      <Style TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
+      </Style>
+
+      <OnPlatform x:TypeArguments="x:String" Android="OpenSans-Regular.ttf#OpenSans-Regular" iOS="OpenSans-Regular" x:Key="TitleFontFamily" />
+
+      <Style x:Key="TitleLabel" TargetType="Label">
+        <Setter Property="Margin" Value="10, 5"></Setter>
+        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
+        <Setter Property="FontSize" Value="Large"></Setter>
+        <Setter Property="FontFamily" Value="{StaticResource TitleFontFamily}"></Setter>
+      </Style>
 		</ResourceDictionary>
 	</Application.Resources>
 </Application>

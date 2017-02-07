@@ -1,19 +1,21 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-		xmlns:local="clr-namespace:ThatCSharpGuy.UI.Controls" 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		xmlns:local="clr-namespace:ThatCSharpGuy.UI.Controls"
       	xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
 		xmlns:md="clr-namespace:ViewMarkdown.Forms.Plugin.Abstractions;assembly=ViewMarkdown.Forms.Plugin.Abstractions"
 		x:Class="ThatCSharpGuy.UI.PostPage">
-	<ContentPage.Content>
-		<Grid RowSpacing="2" BackgroundColor="{StaticResource AccentColor}">
-			<Grid.RowDefinitions>
-				<RowDefinition Height="Auto" x:Name="Row1Header" />
-				<RowDefinition Height="*" />
-			</Grid.RowDefinitions>
-			<Label BackgroundColor="{StaticResource BackgroundAltColor}" x:Name="PostTitle" FontSize="Large"></Label>
-			<WebView Grid.Row="1" x:Name="Site" VerticalOptions="FillAndExpand">
-			</WebView>
-		</Grid>
-	</ContentPage.Content>
+  <ContentPage.Content>
+    <Grid RowSpacing="2" BackgroundColor="{StaticResource AccentColor}">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" x:Name="Row1Header" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+      <ContentView BackgroundColor="{StaticResource BackgroundAltColor}">
+        <Label x:Name="PostTitle" Style="{StaticResource TitleLabel}"></Label>
+      </ContentView>
+      <WebView Grid.Row="1" x:Name="Site" VerticalOptions="FillAndExpand">
+      </WebView>
+    </Grid>
+  </ContentPage.Content>
 </ContentPage>

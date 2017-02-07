@@ -12,7 +12,7 @@
 			<OnPlatform x:TypeArguments="Thickness" Android="10,5" iOS="0"/>
 		</controls:CardView.Margin>
     <controls:CardView.Content>
-      <Grid RowSpacing="0">
+      <Grid RowSpacing="0" BackgroundColor="{StaticResource BackgroundAltColor}">
         <Grid.RowDefinitions>
           <RowDefinition Height="Auto" />
           <RowDefinition Height="Auto" />
@@ -28,7 +28,7 @@
 						DownsampleToViewSize="true"
           Aspect="AspectFit">
         </ffimageloading:CachedImage>
-        <Label x:Name="TitleLabel" FontSize="Large" Grid.Row="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        <Label x:Name="TitleLabel" Style="{StaticResource TitleLabel}" Grid.Row="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
         <Label x:Name="FeaturedTagLabel" Margin="0" BackgroundColor="{StaticResource AccentColor}" 
                TextColor="{StaticResource TextClearColor}"
                FontSize="Micro" Grid.Row="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
