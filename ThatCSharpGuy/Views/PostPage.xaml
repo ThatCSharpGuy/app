@@ -8,39 +8,12 @@
 	<ContentPage.Content>
 		<Grid>
 			<Grid.RowDefinitions>
-				<RowDefinition Height="190" x:Name="Row1Header" />
+				<RowDefinition Height="Auto" x:Name="Row1Header" />
 				<RowDefinition Height="*" />
 			</Grid.RowDefinitions>
-			<Grid RowSpacing="0" ColumnSpacing="0" x:Name="HeaderView">
-				        <ffimageloading:CachedImage x:Name="FeaturedImage"
-                                    HorizontalOptions="FillAndExpand"
-                                    VerticalOptions="FillAndExpand" 
-						DownsampleToViewSize="true"
-          Aspect="AspectFit">
-        </ffimageloading:CachedImage>
-			</Grid>
-			<local:ParallaxScrollView x:Name="ParallaxScroll" Grid.RowSpan="2">
-				<Grid RowSpacing="0">
-					<Grid.RowDefinitions>
-						<RowDefinition Height="190" x:Name="Row1Content" />
-						<RowDefinition Height="*" />
-					</Grid.RowDefinitions>
-					<Grid x:Name="MainStack" VerticalOptions="End" HorizontalOptions="FillAndExpand">
-						<!-- Shadow -->
-						<Image Source="shadow" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
-						<StackLayout Padding="10" Spacing="0" VerticalOptions="End" HorizontalOptions="FillAndExpand">
-							<Label x:Name="PostTitle" Text="Post title abcd ef ghijk hlm" FontSize="18" TextColor="White">
-								<Label.FontFamily>
-									<OnPlatform x:TypeArguments="x:String" Android="sans-serif-light" iOS="HelveticaNeue-Light" />
-								</Label.FontFamily>
-							</Label>
-							<Label x:Name="PostAuthor" Text="Bla bla blacar" FontSize="12" TextColor="White" />
-						</StackLayout>
-					</Grid>
-					<local:HtmlLabel Grid.Row="1" BackgroundColor="White" x:Name="Content"></local:HtmlLabel>
-<!--					<md:MarkdownView Grid.Row="1" VerticalOptions="FillAndExpand" x:Name="Body"></md:MarkdownView>-->
-				</Grid>
-			</local:ParallaxScrollView>
+			<Label x:Name="PostTitle" FontSize="Large"></Label>
+			<WebView Grid.Row="1" x:Name="Site" VerticalOptions="FillAndExpand">
+			</WebView>
 		</Grid>
 	</ContentPage.Content>
 </ContentPage>

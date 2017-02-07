@@ -8,8 +8,6 @@
                            SelectedColor="#3C8A3F">
   <tabbed:PlatformTabbedPage.Children>
     <views:FeedPage></views:FeedPage>
-    <views:VideoPage></views:VideoPage>
-    <views:TweetsPage></views:TweetsPage>
     <views:AboutPage></views:AboutPage>
   </tabbed:PlatformTabbedPage.Children>
 

@@ -13,7 +13,7 @@ namespace ThatCSharpGuy.Data.Real
 	    private ITcsgApi _api;
 	    public PostsStore()
 	    {
-			var client = new HttpClient(new LoggingHandler(new HttpClientHandler()))
+			var client = new HttpClient(/*new LoggingHandler(new HttpClientHandler())*/)
 			{
 				BaseAddress = new Uri("https://raw.githubusercontent.com/ThatCSharpGuy/blog-api/master/")
 
@@ -26,7 +26,7 @@ namespace ThatCSharpGuy.Data.Real
 
 		public async Task<FullPost> GetPost(string id)
 		{
-			var posts = await _api.GetPost(id);
+			var posts = await _api.GetPost(NormalizeId(id));
 			return posts;
 			
 		}
@@ -36,6 +36,15 @@ namespace ThatCSharpGuy.Data.Real
 	        var posts = await _api.GetPosts(page);
 	        return posts;
 	    }
+
+		private string NormalizeId(string id)
+		{
+			if (!id.StartsWith("/"))
+				id = "/" + id;
+			if (!id.EndsWith("/"))
+				id = id + "/";
+			return id;
+		}
 	}
 
 	class LoggingHandler : DelegatingHandler
