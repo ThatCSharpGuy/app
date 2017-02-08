@@ -140,6 +140,15 @@
     <BundleResource Include="Resources\OpenSans-Regular.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </BundleResource>
+    <BundleResource Include="Resources\about_bg.png" />
+    <BundleResource Include="Resources\about_bg%402x.png" />
+    <BundleResource Include="Resources\about_bg%403x.png" />
+    <BundleResource Include="Resources\github.png" />
+    <BundleResource Include="Resources\github%402x.png" />
+    <BundleResource Include="Resources\github%403x.png" />
+    <BundleResource Include="Resources\video.png" />
+    <BundleResource Include="Resources\video%402x.png" />
+    <BundleResource Include="Resources\video%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FFImageLoading, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
