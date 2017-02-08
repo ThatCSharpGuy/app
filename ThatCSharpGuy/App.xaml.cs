@@ -10,7 +10,9 @@ namespace ThatCSharpGuy.UI
 		public App()
 		{
 			InitializeComponent();
-			MainPage = new NavigationPage(new HomePage());
+			var mainPage = new NavigationPage(new HomePage());
+			mainPage.BarBackgroundColor = (Color)Resources["BackgroundAltColor"];
+			MainPage = mainPage;
 		}
 	}
 }

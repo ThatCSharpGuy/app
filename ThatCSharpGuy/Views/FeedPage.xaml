@@ -4,8 +4,10 @@
              xmlns:cells="clr-namespace:ThatCSharpGuy.UI.Controls.Cells;assembly=ThatCSharpGuy.UI"
              xmlns:controls="clr-namespace:ThatCSharpGuy.UI.Controls;assembly=ThatCSharpGuy.UI"
              x:Class="ThatCSharpGuy.UI.Views.FeedPage"
-             Title="Feed"
-             Icon="feed">
+             Title="Feed">
+	<ContentPage.Icon>
+		<OnPlatform x:TypeArguments="FileImageSource" iOS="feed"></OnPlatform>
+	</ContentPage.Icon>
   <controls:FeedListView x:Name="PostList"  SeparatorVisibility="None"  >
     <controls:FeedListView.ItemTemplate>
       <DataTemplate>

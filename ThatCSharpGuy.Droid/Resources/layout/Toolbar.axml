@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:background="?attr/colorPrimary"
     android:theme="@style/CharpGuy.ActionBar"
-    app:titleTextColor="#3C8A3F"
-    app:subtitleTextColor="#3C8A3F"
+    app:titleTextColor="#1E1E1E"
+    app:subtitleTextColor="#1E1E1E"
     android:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 

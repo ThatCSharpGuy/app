@@ -101,11 +101,6 @@
     <Compile Include="Controls\FeedListViewRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Default-568h%402x.png" />
-    <BundleResource Include="Resources\Default-Portrait.png" />
-    <BundleResource Include="Resources\Default-Portrait%402x.png" />
-    <BundleResource Include="Resources\Default.png" />
-    <BundleResource Include="Resources\Default%402x.png" />
     <BundleResource Include="Resources\Icon-60%403x.png" />
     <BundleResource Include="Resources\Icon-Small-40%403x.png" />
     <BundleResource Include="Resources\Icon-Small%403x.png" />
@@ -243,6 +238,10 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon72x72%402x.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon76x76.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon76x76%402x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\LaunchImage.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\LaunchImage%402x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\LaunchImageRetina%402x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\refit.3.0.1\build\netstandard1.3\refit.targets" Condition="Exists('..\packages\refit.3.0.1\build\netstandard1.3\refit.targets')" />

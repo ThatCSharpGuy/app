@@ -24,8 +24,13 @@
     <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
   </style>
 
+  <style name="CharpGuy.Splash" parent ="Theme.AppCompat.Light">
+    <item name="android:windowBackground">@drawable/splash_screen</item>
+    <item name="android:windowNoTitle">true</item>  
+  </style>
+	
   <style name="CharpGuy.ActionBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-    <item name="colorControlNormal">#3C8A3F</item>
+    <item name="colorControlNormal">#007acc</item>
     <item name="android:titleTextStyle">@style/CharpGuy.ActionBar.Text</item>
   </style>
 

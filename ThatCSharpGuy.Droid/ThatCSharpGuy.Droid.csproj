@@ -162,6 +162,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="SplashActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\OpenSans-Regular.ttf" />
@@ -184,6 +185,12 @@
     <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\splash_image.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\splash_image.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\splash_image.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\splash_image.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\splash_image.png" />
+    <AndroidResource Include="Resources\drawable\splash_screen.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />

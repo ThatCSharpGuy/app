@@ -31,7 +31,8 @@ namespace App.iOS
 
 			var formsApp = new ThatCSharpGuy.UI.App();
 
-			UINavigationBar.Appearance.TintColor = ((Color)formsApp.Resources["BrandColor"] ).ToUIColor();
+			UINavigationBar.Appearance.TintColor = ((Color)formsApp.Resources["AccentColor"] ).ToUIColor();
+			UINavigationBar.Appearance.BackgroundColor = UIColor.Red; // ((Color)formsApp.Resources["BackgroundAltColor"]).ToUIColor();
 
             LoadApplication(formsApp);
             return base.FinishedLaunching(app, options);
