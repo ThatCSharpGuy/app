@@ -1,10 +1,11 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Android.Views;
 
 namespace ThatCSharpGuy.Droid
 {
-    [Activity(Label = "App", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
@@ -16,6 +17,18 @@ namespace ThatCSharpGuy.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new ThatCSharpGuy.UI.App());
+        }
+
+        public override bool OnPrepareOptionsMenu(IMenu menu)
+        {
+            return base.OnPrepareOptionsMenu(menu);
+
+            
+        }
+
+        public override void InvalidateOptionsMenu()
+        {
+            base.InvalidateOptionsMenu();
         }
     }
 }
