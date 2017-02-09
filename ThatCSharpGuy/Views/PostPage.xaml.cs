@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using ThatCSharpGuy.Models;
 using Xamarin.Forms;
 
 namespace ThatCSharpGuy.UI
@@ -18,8 +18,10 @@ namespace ThatCSharpGuy.UI
 		{
 			InitializeComponent();
 			_gitHubButton = new ToolbarItem { Icon = "github" };
+			_gitHubButton.Clicked += Button_Clicked;
 			_youTubeButton = new ToolbarItem { Icon = "video" };
-			System.Diagnostics.Debug.WriteLine("New page " + Site.Source);
+			_youTubeButton.Clicked += Button_Clicked;
+
 			_id = id;
 		}
 
@@ -27,21 +29,22 @@ namespace ThatCSharpGuy.UI
 		bool _initialVideoLoad = false;
 
 		String _page;
+		FullPost _post;
 
 		protected override async void OnAppearing()
 		{
 			base.OnAppearing();
 
 			var store = new Data.Real.PostsStore();
-			var post = await store.GetPost(_id);
+			_post = await store.GetPost(_id);
 
-			if (!string.IsNullOrEmpty(post.github))
+			if (!string.IsNullOrEmpty(_post.github))
 				ToolbarItems.Add(_gitHubButton);
-			if (!string.IsNullOrEmpty(post.youtube))
+			if (!string.IsNullOrEmpty(_post.youtube))
 				ToolbarItems.Add(_youTubeButton);
 
-			Title = $"{post.Date.ToLocalTime():dd/MM/yyyy}";
-			PostTitle.Text = post.Title;
+			Title = $"{_post.Date.ToLocalTime():dd/MM/yyyy}";
+			PostTitle.Text = _post.Title;
 			_page = "http://thatcsharpguy.com" + _id + "/m.html";
 
 
@@ -54,6 +57,19 @@ namespace ThatCSharpGuy.UI
 		{
 			base.OnDisappearing();
 			Site.Navigating -= ContentNavigating;
+		}
+
+		void Button_Clicked(object sender, EventArgs e)
+		{
+			var senderButton = sender as ToolbarItem;
+			if (senderButton == _gitHubButton)
+			{
+				Device.OpenUri(new Uri(_post.github));
+			}
+			else if (senderButton == _youTubeButton)
+			{
+				Device.OpenUri(new Uri("https://youtube.com/watch?v=" + _post.youtube));
+			}
 		}
 
 		async void ContentNavigating(object sender, WebNavigatingEventArgs e)

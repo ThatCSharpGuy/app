@@ -24,9 +24,9 @@ namespace ThatCSharpGuy.Data.Mock.Stores
         {
             var returnResponse = new PagedResponse<Post>()
             {
-                Items = _data.Posts.Skip(page * Constants.PageSize).Take(Constants.PageSize).ToList(),
-                CurrentPage = page,
-                TotalPages = _data.Posts.Count / Constants.PageSize
+                items = _data.Posts.Skip(page * Constants.PageSize).Take(Constants.PageSize).ToList(),
+                current_page = page,
+               total_pages = _data.Posts.Count / Constants.PageSize
             };
 
             return await Task.FromResult<PagedResponse<Post>>(returnResponse);

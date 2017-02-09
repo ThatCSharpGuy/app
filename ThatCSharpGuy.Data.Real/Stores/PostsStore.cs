@@ -10,30 +10,32 @@ namespace ThatCSharpGuy.Data.Real
 {
 	public class PostsStore : IPostsStore
 	{
-	    private ITcsgApi _api;
+		//private ITcsgApi _api;
+		HttpClient _client;
 	    public PostsStore()
 	    {
-			var client = new HttpClient(/*new LoggingHandler(new HttpClientHandler())*/)
+			_client = new HttpClient(/*new LoggingHandler(new HttpClientHandler())*/)
 			{
 				BaseAddress = new Uri("https://raw.githubusercontent.com/ThatCSharpGuy/blog-api/master/")
 
 			};
 
-	        _api = Refit.RestService.For<ITcsgApi>(client);
 	    }
 
 
 
 		public async Task<FullPost> GetPost(string id)
 		{
-			var posts = await _api.GetPost(NormalizeId(id));
+			var postsString = await _client.GetStringAsync(NormalizeId(id) + "post.json");
+			var posts = await Newtonsoft.Json.JsonConvert.DeserializeObjectAsync<FullPost>(postsString);
 			return posts;
 			
 		}
 
 		public async Task<PagedResponse<Post>> GetPosts(int page)
 	    {
-	        var posts = await _api.GetPosts(page);
+			var postsString = await _client.GetStringAsync("post" + page +".json");
+			var posts =  Newtonsoft.Json.JsonConvert.DeserializeObject<PagedResponse<Post>>(postsString);
 	        return posts;
 	    }
 

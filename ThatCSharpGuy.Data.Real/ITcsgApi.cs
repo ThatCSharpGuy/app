@@ -1,15 +1,15 @@
-﻿using System.Threading.Tasks;
-using Refit;
-using ThatCSharpGuy.Models;
+﻿//using System.Threading.Tasks;
+//using Refit;
+//using ThatCSharpGuy.Models;
 
-namespace ThatCSharpGuy.Data.Real
-{
-    internal interface ITcsgApi
-    {
-		[Get("/post{page}.json")]
-		Task<PagedResponse<Post>> GetPosts(int page);
+//namespace ThatCSharpGuy.Data.Real
+//{
+//    internal interface ITcsgApi
+//    {
+//		[Get("/post{page}.json")]
+//		Task<PagedResponse<Post>> GetPosts(int page);
 
-		[Get("/{id}post.json")]
-		Task<FullPost> GetPost(string id);
-    }
-}
+//		[Get("/{id}post.json")]
+//		Task<FullPost> GetPost(string id);
+//    }
+//}

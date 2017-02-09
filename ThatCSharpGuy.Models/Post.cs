@@ -5,8 +5,17 @@ using Newtonsoft.Json;
 
 namespace ThatCSharpGuy.Models
 {
+	using ModelsPreserve;
+
+		[Preserve]
     public class Post
     {
+
+		[Preserve]
+		public Post()
+		{
+
+		}
         public string Title { get; set; }
         public DateTimeOffset Date { get; set; }
         public string Summary { get; set; }

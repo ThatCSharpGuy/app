@@ -48,11 +48,11 @@ namespace ThatCSharpGuy.UI.Views
             
             if (_page < 0) return;
             var response = await _store.GetPosts(_page);
-            foreach (var post in response.Items)
+            foreach (var post in response.items)
             {
                 _posts.Add(post);
             }
-            if (response.CurrentPage == response.TotalPages)
+            if (response.current_page == response.total_pages)
                 _page = -1;
             else
             {
