@@ -9,8 +9,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -21,8 +19,6 @@
 	</array>
 	<key>MinimumOSVersion</key>
 	<string>6.0</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.App</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>NSAppTransportSecurity</key>
@@ -41,7 +37,7 @@
 		</dict>
 	</dict>
 	<key>CFBundleShortVersionString</key>
-	<string></string>
+	<string>1.0</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>OpenSans-Regular.ttf</string>
@@ -52,5 +48,7 @@
 	<string>That C# guy</string>
 	<key>XSLaunchImageAssets</key>
 	<string>Assets.xcassets/LaunchImage.launchimage</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.thatcsharpguy.app</string>
 </dict>
 </plist>
