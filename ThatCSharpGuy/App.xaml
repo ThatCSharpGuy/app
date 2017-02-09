@@ -20,6 +20,16 @@
         <Setter Property="FontSize" Value="Large"></Setter>
         <Setter Property="FontFamily" Value="{StaticResource TitleFontFamily}"></Setter>
       </Style>
+
+
+      <OnPlatform x:TypeArguments="Color" Android="{StaticResource BrandColor}" x:Key="BrandedButtonBackgroundColor" />
+      <OnPlatform x:TypeArguments="Color" Android="White" iOS="{StaticResource BrandColor}" x:Key="BrandedButtonTextColor" />
+
+      
+      <Style x:Key="BrandedButton" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource BrandedButtonBackgroundColor}"></Setter>
+        <Setter Property="TextColor" Value="{StaticResource BrandedButtonTextColor}"></Setter>
+      </Style>
 		</ResourceDictionary>
 	</Application.Resources>
 </Application>

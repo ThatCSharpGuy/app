@@ -25,10 +25,10 @@
 					<Label FontFamily="Helvetica-Light" HorizontalOptions="Center" Text="Este es un blog dedicado a las ciencias computacionales y a la programación (más a esto último) de aplicaciones. El blog está hecho con Jekyll en una computadora con Windows 8.1 y utilizando Code como editor principal. Por alguna razón todo el código de este blog está en GitHub por si lo quieres ver." />
 					<Label Text="Antonio Feregrino" Style="{StaticResource TitleLabel}" VerticalOptions="Center" HorizontalOptions="Center" />
 					<Label FontFamily="Helvetica-Light" HorizontalOptions="Center" Text="Programador, con ganas de enseñar y muchas más de aprender. Apasionado de lo que hago, hice mi primera calculadora con C# en 2008 y no he parado desde entonces, terminé la universidad en 6 años mientras trabajaba escribiendo código en Heurística Soluciones. También fui Microsoft Student Partner y miembro de la primera generación de Xamarin Student Partners, tengo un bonito trofeo de Xamarin que dice que soy un desarrollador certificado." />
-					<Button x:Name="TwitterButton" Text="@io_exception en Twitter" Clicked="Handle_Clicked" />
-					<Button x:Name="MailButton" Text="feregrino@thatcsharpguy.com" Clicked="Handle_Clicked" />
-					<Button x:Name="FacebookButton" Text="That C# guy en Facebook" Clicked="Handle_Clicked" />
-					<Button x:Name="GitHubButton" Text="@ThatCSharpGuy en GitHub" Clicked="Handle_Clicked" />
+					<Button Style="{StaticResource BrandedButton}" x:Name="TwitterButton" Text="@io_exception en Twitter" Clicked="Handle_Clicked" />
+					<Button Style="{StaticResource BrandedButton}" x:Name="MailButton" Text="feregrino@thatcsharpguy.com" Clicked="Handle_Clicked" />
+					<Button Style="{StaticResource BrandedButton}" x:Name="FacebookButton" Text="That C# guy en Facebook" Clicked="Handle_Clicked" />
+					<Button Style="{StaticResource BrandedButton}" x:Name="GitHubButton" Text="@ThatCSharpGuy en GitHub" Clicked="Handle_Clicked" />
 				</StackLayout>
 			</Grid>
 		</controls:ParallaxScrollView>
