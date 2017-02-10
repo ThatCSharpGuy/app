@@ -26,23 +26,26 @@ namespace ThatCSharpGuy.Data.Real
 
 		public async Task<FullPost> GetPost(string id)
 		{
-			var postsString = await _client.GetStringAsync(NormalizeId(id) + "post.json");
-			var posts = await Newtonsoft.Json.JsonConvert.DeserializeObjectAsync<FullPost>(postsString);
+			var qry = NormalizeId(id) + "post.json";
+			var postsString = await _client.GetStringAsync(qry);
+			var posts = Newtonsoft.Json.JsonConvert.DeserializeObject<FullPost>(postsString);
 			return posts;
 			
 		}
 
 		public async Task<PagedResponse<Post>> GetPosts(int page)
 	    {
-			var postsString = await _client.GetStringAsync("post" + page +".json");
+				var postsString = await _client.GetStringAsync("post" + page +".json");
 			var posts =  Newtonsoft.Json.JsonConvert.DeserializeObject<PagedResponse<Post>>(postsString);
+
+
 	        return posts;
 	    }
 
 		private string NormalizeId(string id)
 		{
-			if (!id.StartsWith("/"))
-				id = "/" + id;
+			if (id.StartsWith("/"))
+				id = id.Substring(1);
 			if (!id.EndsWith("/"))
 				id = id + "/";
 			return id;

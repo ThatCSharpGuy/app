@@ -18,7 +18,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>6.0</string>
+	<string>9.0</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>NSAppTransportSecurity</key>
@@ -50,5 +50,9 @@
 	<string>Assets.xcassets/LaunchImage.launchimage</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.thatcsharpguy.app</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>arm64</string>
+	</array>
 </dict>
 </plist>

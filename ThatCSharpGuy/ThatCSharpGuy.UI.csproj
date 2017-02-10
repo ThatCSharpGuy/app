@@ -142,10 +142,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ThatCSharpGuy.Data.Mock\ThatCSharpGuy.Data.Mock.csproj">
-      <Project>{0ce34246-5e9f-4d58-8c5e-cf34966c17f0}</Project>
-      <Name>ThatCSharpGuy.Data.Mock</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ThatCSharpGuy.Data.Real\ThatCSharpGuy.Data.Real.csproj">
       <Project>{3000b7b9-a31f-4d75-bd22-4a49fe5278d3}</Project>
       <Name>ThatCSharpGuy.Data.Real</Name>
